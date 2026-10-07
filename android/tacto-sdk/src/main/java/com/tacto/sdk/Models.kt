@@ -19,3 +19,5 @@ data class Payment(
     val qrPayload: String?,
     val expiresAt: Instant?,
 )
+
+
