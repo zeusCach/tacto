@@ -25,7 +25,7 @@ object Tacto {
     }
 
     // Crea un nuevo pago de forma asíncrona.
-    suspend fun createPayment(amount: Long, currency: String = "MXM"): Payment =
+    suspend fun createPayment(amount: Long, currency: String = "MXN"): Payment =
         // Envía la solicitud al cliente configurado.
         requireClient().createPayment(amount, currency)
 
